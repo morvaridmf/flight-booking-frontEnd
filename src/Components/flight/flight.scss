@@ -1,0 +1,134 @@
+@import "../../global.scss";
+
+.flight {
+    margin: 0;
+    color: $dark;
+
+    h1 {
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    .flight-body {
+
+        nav {
+            // background-color: $dark-gray;
+            height: 50px;
+            display: flex;
+            border-bottom: 1px solid $dark-gray;
+            width: 600px;
+            margin: 0 auto;
+            justify-content: center;
+
+
+            a {
+                text-decoration: none;
+
+                h3 {
+                    justify-content: center;
+                    margin-left: 30px;
+                    text-decoration: none;
+                }
+            }
+
+        }
+
+        h2 {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .flight-main {
+            display: flex;
+            // justify-content: center;
+            margin: 50px auto;
+            width: 1000px;
+            background-color: $dark-gray;
+            padding: 20px;
+            border-radius: 10px;
+
+            .flight-departure {
+                h3 {
+                    font-size: 28px;
+                    padding-left: 10px;
+                    color: $background;
+                }
+
+                .flight-info {
+                    .flight-info--text {
+                        h4 {
+                            padding-left: 10px;
+                            font-size: 16px;
+                            color: $background;
+
+                            span {
+                                color: $dark;
+                                font-weight: bold;
+                                font-size: 18px;
+                            }
+                        }
+                    }
+
+                    .flight-info--box {
+                        .flighItem {
+                            background-color: $background;
+                            width: 980px;
+                            margin-bottom: 20px;
+                            height: 120px;
+                            padding: 10px;
+                            border-radius: 10px;
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: space-between;
+
+                            // .show {
+                            //     height: 150px;
+                            // }
+                            .moreInfo {
+                                visibility: hidden;
+                                // background-color: $background;
+                            }
+
+                            span {
+                                font-weight: bold;
+                            }
+
+                            .flight-info-more {
+                                align-items: center;
+                                margin: auto 0;
+
+                                button {
+                                    display: flex;
+                                    flex-direction: column;
+                                    margin-top: 10px;
+                                    margin-right: 10px;
+
+                                }
+
+                                .btn-select {
+                                    background-color: green;
+                                    padding: 5px 10px;
+                                    border-radius: 5px;
+                                    color: $background;
+                                    border: none;
+                                    cursor: pointer;
+                                }
+
+                                .btn-detail {
+                                    background-color: $yellow;
+                                    padding: 5px 10px;
+                                    border-radius: 5px;
+                                    color: $dark;
+                                    // border: none;
+                                    cursor: pointer;
+                                    border: 1px solid $yellow;
+                                }
+                            }
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

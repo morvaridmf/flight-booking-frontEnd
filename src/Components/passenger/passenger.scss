@@ -1,0 +1,108 @@
+@import "../../global.scss";
+
+.passenger {
+    margin: 0;
+    color: $dark;
+
+    nav {
+        // background-color: $dark-gray;
+        height: 50px;
+        display: flex;
+        border-bottom: 1px solid $dark-gray;
+        width: 600px;
+        margin: 0 auto;
+        justify-content: center;
+
+
+        a {
+            text-decoration: none;
+
+            h3 {
+                justify-content: center;
+                margin-left: 30px;
+                text-decoration: none;
+            }
+        }
+
+    }
+
+    .passenger-container {
+        display: flex;
+        flex-direction: column;
+        // justify-content: center;
+        margin: 50px auto;
+        width: 1000px;
+        // height: 200px;
+        background-color: $light-gray;
+        padding: 20px;
+        border-radius: 10px;
+
+        h2 {
+            display: block;
+        }
+
+        .passenger-container--input {
+            background-color: $background;
+            border-radius: 5px;
+
+            p {
+                font-size: 18px;
+                margin-left: 10px;
+            }
+
+            .passenger-input {
+                padding: 10px;
+                display: flex;
+                flex-direction: row;
+                justify-content: start;
+                row-gap: 20px;
+                column-gap: 30px;
+                margin-top: 20px;
+                flex-wrap: wrap;
+
+                label {
+                    display: block;
+                    margin-bottom: 5px;
+                    margin-left: 10px;
+                }
+
+                select {
+                    width: 120px;
+                    padding: 10px;
+                    margin-left: 10px;
+                    // border: none;
+                    border-radius: 5px;
+                    background-color: transparent;
+                    // border-bottom: 1px solid black;
+
+                }
+
+                input {
+                    width: 260px;
+                    padding: 10px;
+                    margin-left: 10px;
+                    background-color: transparent;
+                    // border: none;
+                    border-radius: 5px;
+                    border: 1px solid $dark-gray;
+                    // border-bottom: 1px solid black;
+                }
+            }
+
+            button {
+                background-color: $yellow;
+                padding: 5px 10px;
+                border-radius: 5px;
+                color: $dark;
+                // border: none;
+                cursor: pointer;
+                float: right;
+                margin: 20px;
+                font-size: 16px;
+                // font-weight: ;
+                border: 1px solid $yellow;
+            }
+        }
+    }
+
+}
